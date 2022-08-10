@@ -11,6 +11,7 @@
   padding: 0;
   margin: 0;
 }
+
 body { 
   background-image: url(/deathToStock.jpeg);
   background-size: cover;
@@ -22,30 +23,32 @@ body {
   /* height: auto; */
 }
 
-main {
+/* main {
   height:100vh;
   width:100%;
-}
+} */
 
 nav{
-  /* position:fixed; */
+  position:fixed;
   left:0;right:0;top:0;
   height:55px;
   background-color: white;
   box-shadow:0 0px 9px 4px rgba(#000, .1), 0 -5px 2px 2px rgba(#000, .1);
   z-index:1000;
   min-width:580px;
-  border-bottom: 4px solid var(--lightgreen);
+  padding-bottom: 45px;
+  border-bottom: 8px solid var(--lightgreen);
   border-top: 20px solid white;
+  /* padding-right: 50px; */
 }
 
+/* GetUWired */
 .logo{
   position:relative;
   float:left;
-  height:50px;
   /* line-height:50px; */
   padding:0 0 0 125px;
-  font-size:20px;
+  font-size:22px;
   font-weight:bolder;
   color: var(--textdark);
   text-transform:uppercase;
@@ -54,81 +57,94 @@ nav{
   letter-spacing: 3px;
 } 
 
-/* .dropdown{
-  float:right;
-  margin-right: 30px;    
-  position:relative;
-} */
 
+
+/* links */
 .topnav {
   float:right;
   position: relative;
-  /* overflow: hidden; */
-  background-color: white;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  /* margin: 0 0 0 0; */
+  padding-right: 50px;
 }
-
+/* link text */
 .topnav a {
-  float: left;
-  display: block;
+  /* float: left; */
+  display: inline-block;
   color: var(--textdark);
-  text-align: center;
+  /* text-align: center; */
   font-size: 12px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;  
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  padding: 14px 16px;
+  /* padding: 16px 16px; */
   text-decoration: none;
 }
 
-/* .active {
-  background-color: #04AA6D;
+.active {
+  background-color: var(--lightgreen);
   color: white;
-} */
+}
 
 /* .topnav .icon {
   display: none;
 } */
 
+
 .dropdown {
   float: left;
   overflow: hidden;
+  /* border: solid black; */
 }
 
-.dropdown .dropbtn {
-  font-size: 12px;
-  letter-spacing: 1px;
+.dropbtn {
+  font-size: 16px;
+  overflow: hidden;
+  /* width: 125px; */
+  margin: 0px 25px 0px 0px;
+  letter-spacing: 2px;
   text-transform: uppercase;  
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
-  border: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  border: none; 
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   outline: none;
   color: var(--textdark);
-  padding: 16px 16px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 20px; */
+    padding: 10px 5px 20px 5px;
   background-color: inherit;
-  margin: 0;
 }
+
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  /* position: absolute; */
   background-color: var(--lightgreen);
-  min-width: 160px;
+  /* padding: 10px 25px 10px 25px; */
+  /* min-width: 130px; */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 3px;
+  /* left: 0% !important; */
+  /* right: auto !important; */
+  /* text-align: center !important; */
+  
 }
 
 .dropdown-content a {
-  text-align: center;
-  float: none;
-  color: white;
+  /* text-align: center; */
+  float:initial;
+  color: var(--textlight);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  text-shadow: 1px 2px rgba(6, 6, 6, 0.153);
+
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover, 
+.dropdown:hover
+.dropbtn {
   background-color:var(--lightgreen);
   color: var(--textdark);
 }
@@ -136,10 +152,12 @@ nav{
 .dropdown-content a:hover {
   background-color: #019966;
   color: white;
+  
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:block;
+  transform: translate(0, 0) !important;
 }
 
 @media screen and (max-width: 600px) {
