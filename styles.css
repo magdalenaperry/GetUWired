@@ -6,13 +6,13 @@
   --textlight: #f8fbfa;
 }
 
-* { 
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body { 
+body {
   background-image: url(/deathToStock.jpeg);
   background-size: cover;
   background-color: #59a0c1;
@@ -28,14 +28,16 @@ body {
   width:100%;
 } */
 
-nav{
-  position:fixed;
-  left:0;right:0;top:0;
-  height:55px;
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
   background-color: white;
-  box-shadow:0 0px 9px 4px rgba(#000, .1), 0 -5px 2px 2px rgba(#000, .1);
-  z-index:1000;
-  min-width:580px;
+  box-shadow: 0 0px 9px 4px rgba(#000, 0.1), 0 -5px 2px 2px rgba(#000, 0.1);
+  z-index: 1000;
+  min-width: 580px;
   padding-bottom: 45px;
   border-bottom: 8px solid var(--lightgreen);
   border-top: 20px solid white;
@@ -43,25 +45,24 @@ nav{
 }
 
 /* GetUWired */
-.logo{
-  position:relative;
-  float:left;
+.logo {
+  position: relative;
+  float: left;
   /* line-height:50px; */
-  padding:0 0 0 125px;
-  font-size:22px;
-  font-weight:bolder;
+  padding: 0 0 0 125px;
+  font-size: 22px;
+  font-weight: bolder;
   color: var(--textdark);
-  text-transform:uppercase;
+  text-transform: uppercase;
   text-decoration: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   letter-spacing: 3px;
-} 
-
-
+}
 
 /* links */
 .topnav {
-  float:right;
+  float: right;
   position: relative;
   /* margin: 0 0 0 0; */
   padding-right: 50px;
@@ -74,8 +75,9 @@ nav{
   /* text-align: center; */
   font-size: 12px;
   letter-spacing: 2px;
-  text-transform: uppercase;  
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   /* padding: 16px 16px; */
   text-decoration: none;
 }
@@ -89,7 +91,6 @@ nav{
   display: none;
 } */
 
-
 .dropdown {
   float: left;
   overflow: hidden;
@@ -102,19 +103,19 @@ nav{
   /* width: 125px; */
   margin: 0px 25px 0px 0px;
   letter-spacing: 2px;
-  text-transform: uppercase;  
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  border: none; 
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   outline: none;
   color: var(--textdark);
   /* padding-top: 10px; */
   /* padding-bottom: 20px; */
-    padding: 10px 5px 20px 5px;
+  padding: 10px 5px 20px 5px;
   background-color: inherit;
 }
-
 
 .dropdown-content {
   display: none;
@@ -122,46 +123,43 @@ nav{
   background-color: var(--lightgreen);
   /* padding: 10px 25px 10px 25px; */
   /* min-width: 130px; */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 3px;
   /* left: 0% !important; */
   /* right: auto !important; */
   /* text-align: center !important; */
-  
 }
 
 .dropdown-content a {
   /* text-align: center; */
-  float:initial;
+  float: initial;
   color: var(--textlight);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-shadow: 1px 2px rgba(6, 6, 6, 0.153);
-
 }
 
-.topnav a:hover, 
-.dropdown:hover
-.dropbtn {
-  background-color:var(--lightgreen);
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--lightgreen);
   color: var(--textdark);
 }
 
 .dropdown-content a:hover {
   background-color: #019966;
   color: white;
-  
 }
 
 .dropdown:hover .dropdown-content {
-  display:block;
+  display: block;
   transform: translate(0, 0) !important;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -171,7 +169,9 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -182,8 +182,12 @@ nav{
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
