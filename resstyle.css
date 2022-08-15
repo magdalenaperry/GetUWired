@@ -139,7 +139,6 @@ nav a {
   display: block;
 }
 
-a:hover,
 .dropdown:hover .dropbtn {
   background-color: var(--lightgreen);
 }
@@ -266,8 +265,7 @@ a:hover,
   }
 
   .dropdown-content {
-    display: contents;
-    position: absolute;
+    position: inherit;
     background-color: var(--lightgreen);
     width:100%;
     margin:0;
@@ -286,7 +284,7 @@ a:hover,
   .dropdown-content a:hover {
     background-color: var(--darkgreen);
     color: var(--textlight);
-    margin-top: 7px;
+    margin-top: 0px; 
   }
 
   .dropdown:hover .dropdown-content {
